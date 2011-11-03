@@ -1,5 +1,11 @@
+# revision 18651
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-lmextra
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeXLive lmextra package
 Group:		Publishing
@@ -33,6 +39,7 @@ TeXLive lmextra package.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/fonts/truetype/hoekwater/lmextra/lmtypewriter10-regular.ttf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -43,3 +50,5 @@ TeXLive lmextra package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
