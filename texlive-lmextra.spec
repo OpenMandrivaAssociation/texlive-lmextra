@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-lmextra
 Version:	20111103
-Release:	11
+Release:	12
 Summary:	TeXLive lmextra package
 Group:		Publishing
 URL:		http://tug.org/texlive
